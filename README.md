@@ -1,1 +1,3 @@
 # winversion-web
+
+Help me create a bootstrap-css-html-javascript website for an ai solutions agency "Winversion Solutions" It must be static, no database, it would include these pages/sections: landing page, contact us, solutions & services, history, etc. It must be responsive, have a toggle for the navigation bar, have a consistent them across all pages/sections, and a footer. It should be styled according to 2025 industry standards and trends, simple to maintain, smartly divided into components and include links and references to all external sources. It also must be portable.
