@@ -3,65 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Website Showcase</title>
-    <style>
-        :root {
-            --bg-color: #f4f4f4;
-            --text-color: #333;
-            --primary-color: #007bff;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 2.5em;
-            animation: fadeIn 1.5s;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-        .btn:hover {
-            transform: scale(1.1);
-        }
-        .dark-mode {
-            --bg-color: #222;
-            --text-color: #fff;
-            --primary-color: #ff9800;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-    </style>
+    <title>Winversion Solutions - AI Innovation</title>
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Static Website</h1>
-        <p>This is a showcase of what can be done in a simple HTML file.</p>
-        <button class="btn" onclick="toggleTheme()">Toggle Theme</button>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Winversion Solutions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="solutions.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <script>
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-        }
-    </script>
+    <!-- Main Content -->
+    <main class="container my-5 pt-5">
+        <section class="text-center py-5">
+            <h1 class="display-4 fw-bold">Welcome to Winversion Solutions</h1>
+            <p class="lead">Pioneering AI-driven innovation for a smarter future.</p>
+            <a href="solutions.html" class="btn btn-primary btn-lg mt-3">Explore Solutions</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Winversion Solutions. All rights reserved.</p>
+        <p>Powered by <a href="https://getbootstrap.com/" target="_blank" class="text-white">Bootstrap</a> | Hosted on <a href="https://pages.github.com/" target="_blank" class="text-white">GitHub Pages</a> & <a href="https://www.cloudflare.com/" target="_blank" class="text-white">Cloudflare</a></p>
+    </footer>
+
+    <!-- Bootstrap JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
