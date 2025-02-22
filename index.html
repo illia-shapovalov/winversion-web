@@ -180,25 +180,39 @@
             <div class="row">
                 <div class="col-lg-6 fade-in">
                     <h2 class="mb-4">Get in Touch</h2>
-                    <form class="contact-form">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email">
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                    
+					<form target="_blank" action="https://formsubmit.co/info@winversion.com" method="POST" role="form" class="contact-form">
+						<input type="hidden" name="_captcha" value="false">
+						<input type="hidden" name="_next" value="https://www.winversion.com/thanks.html">
+						<input type="hidden" name="_subject" value="New email from Website!">
+					  <div class="row">
+						<div class="form-group mb-3">
+						  <label for="name">Your Name</label>
+						  <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" required>
+						</div>
+						<div class="form-group mb-3">
+						  <label for="name">Your Email</label>
+						  <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required>
+						</div>
+					  </div>
+					  <div class="form-group mb-3">
+						<label for="name">Message</label>
+						<textarea placeholder="Your Message" class="form-control" name="message" id="message" rows="10" required></textarea>
+					  </div>
+					  <!--<div class="my-3">
+						<div class="loading">Loading</div>
+						<div class="error-message"></div>
+						<div class="sent-message">Your message has been sent. Thank you!</div>
+					  </div>-->
+					  <div class="text-center"><button type="submit" class="btn btn-primary">Send Message</button></div>
+					</form>
                 </div>
                 <div class="col-lg-6 fade-in">
                     <div class="ps-lg-5">
                         <h4>Contact Information</h4>
                         <p>Email: info@winversion.com</p>
                         <p>Phone: +1 (555) 123-4567</p>
-                        <p>Address: 125 Innovation Street, Tech City, TC 12345</p>
+                        <!--<p>Address: 125 Innovation Street, Tech City, TC 12345</p>-->
                     </div>
                 </div>
             </div>
