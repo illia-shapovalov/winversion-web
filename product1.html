@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winversion Solutions - AI Solutions Agency</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #2D3BA3;
+            --secondary-color: #6C63FF;
+            --accent-color: #FF6B6B;
+            --dark-bg: #1A1B25;
+            --light-bg: #F8F9FA;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            min-height: 80vh;
+            color: white;
+        }
+
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 20px;
+            border-left: 2px solid var(--primary-color);
+            margin-left: 20px;
+        }
+
+        .contact-form {
+            background: var(--light-bg);
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .footer {
+            background: var(--dark-bg);
+            color: white;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/api/placeholder/150/50" alt="Winversion Solutions Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Solutions & Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>AI Assistant Service for Businesses</h1>
+            <p>Enhance customer interaction and streamline business operations</p>
+        </div>
+        
+        <!-- Content Area with Text and Diagram -->
+        <div class="content">
+            <!-- Text Content Section -->
+            <div class="text-content">
+                <h2>How Our AI Assistant Works</h2>
+                <p>Our AI-powered assistant is designed to revolutionize your business operations by integrating smart automation that provides personalized customer support, handles routine tasks, and delivers real-time data insights. From customer queries to advanced analytics, our assistant ensures a seamless experience for both your team and clients.</p>
+                <p>This intelligent system adapts to your company’s workflow, allowing for custom integrations with your CRM, email systems, and more. It can manage inquiries, make recommendations, and provide timely updates—all while learning from interactions to continuously improve its responses.</p>
+                <p>The implementation process is simple and requires minimal disruption to your existing operations. We provide a step-by-step guide for setup and offer dedicated support throughout the integration phase.</p>
+            </div>
+
+            <!-- Diagram Section -->
+            <div class="diagram">
+                <h2>Service Diagram</h2>
+                <p>Below is an illustration of how the AI Assistant integrates into your business operations:</p>
+                <!-- Replace with an actual diagram or visual -->
+                <img src="your-diagram-placeholder.jpg" alt="AI Integration Diagram">
+            </div>
+        </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Winversion Solutions</h5>
+                    <p>Transforming businesses through AI innovation.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#services" class="text-white">Services</a></li>
+                        <li><a href="#history" class="text-white">History</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3">LinkedIn</a>
+                        <a href="#" class="text-white me-3">Twitter</a>
+                        <a href="#" class="text-white">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="text-center">
+                <p>&copy; 2025 Winversion Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade-in animation on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach((element) => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
